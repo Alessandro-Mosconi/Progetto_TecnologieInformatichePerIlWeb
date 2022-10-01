@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" media="all" href="CSS/mystyle.css"/>
+<script src="utils.js" charset="utf-8" defer></script>
+<script src="meetingManagement.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+	<div align="right">
+		<a href="Logout">Logout</a>
+	</div>
+	<h1>Welcome to the Meeting Management Home Page</h1>
+	<p>Nice to see you again <span id="id_username"></span></p>
+	<div id="id_alert" class="alertmessage"></div>	
+	
+	<!--
+	<div align="right">
+		<a th:href="@{/Logout}">Logout</a>
+	</div>
+	<h1>Welcome to the Meeting Management Home Page</h1>
+	<p th:text="${'Nice to see you again ' + session.user.name + ' ' + session.user.surname + ', you have ' + meetingsCreated.size() + ' meeting created and ' + meetingsGuest.size() + ' meeting invitation'}"></p>
+	-->
+	
+	<h2>Meeting Created</h2>
+
+	<table id="id_meetingcreated">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Date</th>
+				<th>Duration</th>
+				<th>Max members</th>
+			</tr>
+		</thead>
+		
+		<tbody id="id_meetingcreatedbody">
+		</tbody>
+	</table>
+	<p id="id_noCreation" class="alertmessage"></p>
+	
+	<h2>Meeting Invitation</h2>
+	
+	<table id="id_meetinginvitation">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Date</th>
+				<th>Duration</th>
+				<th>Max members</th>
+			</tr>
+		</thead>
+		
+		<tbody id="id_meetinginvitationbody">
+		</tbody>
+	</table>
+	<p id="id_noInvitation" class="alertmessage"></p>
+	
+	<div>
+		<p>Complete the form to create a meeting</p>
+		<form action="#">
+			<fieldset id="meetingForm" class="meetingFieldset">
+				<p>
+					Title: <input type="text" name="title" required />
+				</p>
+				<p>
+					Duration in minutes: <input type="number" name="duration" min=1 required />
+				</p>
+				<p>
+					Start Date: <input type="datetime-local" name="date" required />
+				</p>
+				<p>
+					Max number of guests: <input type="number" id = "maxGuests" name="maxGuests" min=1 required />
+				</p>
+				<input type="button" id = "next" name="next" value="next" class="next">
+			</fieldset>
+			
+			<div id="modalFieldset">
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+							<span class="close">&times;</span>
+							<h2>Anagrafe</h2>
+						</div>
+						<div class="modal-body">
+						<p id="errore"></p>
+						<p id="tentativi"></p>
+						<p id="max"></p>
+						<fieldset>
+						<div id="anagrafe">
+							<input type="button" id = "cancel" name="cancel" value="cancel" class="cancel">
+							<input type="button" id = "submit" name="submit" value="submit" class="submit">
+							<br>
+						</div>
+						</fieldset>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	
+
+
+	
+</body>
+</html>

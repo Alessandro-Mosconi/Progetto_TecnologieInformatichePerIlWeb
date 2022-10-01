@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<!--   <link rel="stylesheet" type="text/css" media="all"
+	href="../CSS/mystyle.css" th:href="@{/css/mystyle.css}" />
+	-->
+</head>
+
+<body>
+	<div align="right">
+		<a th:href="@{/Logout}">Logout</a>
+	</div>
+	<h1>Welcome to the Meeting Management Home Page</h1>
+	<p th:text="${'Nice to see you again ' + session.user.name + ' ' + session.user.surname + ', you have ' + meetingsCreated.size() + ' meeting created and ' + meetingsGuest.size() + ' meeting invitation'}"></p>
+	
+	<h2>Meeting Created</h2>
+	<div th:if="${meetingsCreated.size() >0}">
+		<table>
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Date</th>
+					<th>Duration</th>
+					<th>Max members</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each ="m : ${meetingsCreated}">
+					<td th:text="${m.title}"></td>
+					<td th:text="${m.startDate + 'min'}"></td>
+					<td th:text="${m.duration}"></td>
+					<td th:text="${m.maxGuests}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>  
+	<div th:if="${meetingsCreated.size() == 0}"> No missions were created.</div>
+	
+	<h2>Meeting Invitation</h2>
+	<div th:if="${meetingsGuest.size() >0}">
+		<table>
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Date</th>
+					<th>Duration</th>
+					<th>Creator</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each ="m : ${meetingsGuest}">
+					<td th:text="${m.title}"></td>
+					<td th:text="${m.startDate}"></td>
+					<td th:text="${m.duration + 'min'}"></td>
+					<td th:text="${m.owner}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>  
+	<div th:if="${meetingsGuest.size() == 0}"> No missions invite.</div>
+	
+	<div>
+		<p>Complete the form to create a meeting</p>
+		<form action="#" th:action="@{/CreateMeeting}" method="POST">
+			<fieldset>
+				<p>
+					Title: <input type="text" name="title" required />
+				</p>
+				<p>
+					Duration in minutes: <input type="number" name="duration" min=1 required />
+				</p>
+				<p>
+					Start Date: <input type="datetime-local" name="date"
+						th:attr="min=${#dates.format(#dates.createNow(), 'yyyy-MM-dd HH:mm:ss')}"
+						placeholder="yyyy-MM-dd HH:mm:ss" required />
+				</p>
+				<p>
+					Max number of guests: <input type="number" name="maxGuests" min=1 required />
+				</p>
+				<input type="submit" name="Create Meeting" value="invia">
+		<p th:text=" ${errorMsg}"></p>
+			</fieldset>
+		</form>
+		
+	</div>
+</body>
+</html>

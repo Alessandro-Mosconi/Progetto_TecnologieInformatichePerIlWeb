@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Anagrafe</title>
+</head>
+
+
+<body>
+	<h1>Choose the guest to add to the meeting</h1>
+	<p th:text="${'You have ' + session.counter + ' attempts'}"></p>
+	<p th:text="${'Max ' + session.meeting.maxGuests + ' guests'}"></p>
+
+	<div th:if="${users.size() >0}">
+
+<form action="#" th:action="@{/CheckGuests}" method="POST">
+
+    <p th:each ="u : ${users}">
+        <input type="checkbox"      
+            th:text="${u.mail}"
+            th:value ="${u}"
+            th:attr="name = ${u.id}, checked=${u.flag}"
+        />
+    </p>
+    <input type="submit" name="Create Guests" value="invita">
+</form>
+	</div>
+	<div th:if="${users.size() == 0}"> No user to see</div>
+
+
+</body>
+</html>

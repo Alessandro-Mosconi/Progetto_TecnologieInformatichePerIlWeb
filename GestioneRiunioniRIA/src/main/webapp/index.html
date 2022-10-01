@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login page</title>
+<script src="utils.js" charset="utf-8" defer></script>
+<script src="loginManagement.js" charset="utf-8" defer></script>
+<script src="signupManagement.js" charset="utf-8" defer></script>
+
+</head>
+<body>
+	<h1>Welcome to the meeting management application</h1>
+
+	<p>Login here</p>
+	<form action="#">
+		Username: <input type="text" name="username" required><br>
+		Password: <input type="password" name="psw" required><br>
+		<input id="loginbutton" type="button" value="login">
+		<p id="errorLoginmessage"></p>
+	</form>
+	
+	<p>Register here</p>
+	<form action="#">
+		Mail: <input type="email" name="mail" required><br>
+		Password: <input type="password" id="psw" name="psw" required><br>	
+		Repeat password: <input type="password" id="repeatpsw" name="repeatpsw" required><br>		
+		Username: <input type="text" name="username" required><br>
+		Name: <input type="text" name="name" required><br>
+		Surname: <input type="text" name="surname" required><br>
+		<input id="signupbutton" type="button" value="signup">
+		<p id="errorSignupmessage"></p>
+	</form>
+
+
+</body>
+</html>
