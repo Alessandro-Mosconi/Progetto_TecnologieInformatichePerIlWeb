@@ -32,7 +32,7 @@ Il progetto riguardava le costruzione di un sito beckend e frontend per la gesti
 ## Screenshots
 Scene of the login page\
 \
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/resources/ModalError.PNG "Modal Error")\
+![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/Home2.PNG "Home")\
 \
 \
 Login (CLI VERSION)\
