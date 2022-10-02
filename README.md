@@ -27,7 +27,10 @@ Il progetto riguardava le costruzione di un sito beckend e frontend per la gesti
 - ✅  Controlli frontend e backend sulla correttezza dei vari campi
 
 ## Database
-
+Database implementato in mySQL
+\
+![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/DataBaseDesign.bmp "DataBase")\
+\
 
 ## Screenshots
 Scene of the login page\
