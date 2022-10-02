@@ -53,38 +53,38 @@ Database implementato in mySQL
 
 accesso + registrazione
 
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/Login.png "Index")
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/Login.png" width=75% height=75%>
 
 ### Home
 
 Pure HTML
 
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/HomeUpdate.PNG "Home html")
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/HomeUpdate.PNG" width=75% height=75%>
 
 RIA
 
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/HomeRIA.PNG "Home RIA")
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/HomeRIA.PNG" width=75% height=75%>
 
 ### Selezione user
 
 Pure HTML
 
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/UserSelect.PNG "User selection HTML")
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/UserSelect.PNG" width=75% height=75%>
 
 RIA
 
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/UserModal.PNG "User selection RIA")
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/UserModal.PNG" width=75% height=75%>
 
 ## Errori
 
 Invalid input
 
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/Error_InvalidInput.PNG "Invalid Input")
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/Error_InvalidField.PNG" width=75% height=75%>
 
 Superato il numero massimo di tentativi - Pure HTML
 
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/Error_NumOfAttempts.PNG "NumOfAttemptsExceeded")
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/Error_NumOfAttempts.PNG" width=75% height=75%>
 
 Troppi utenti selezionati - RIA
 
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ModalError.PNG "Too Many User")
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ModalError.PNG" width=75% height=75%>
