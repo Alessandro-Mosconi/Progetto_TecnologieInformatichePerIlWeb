@@ -32,9 +32,7 @@ Il progetto riguardava le costruzione di un sito beckend e frontend per la gesti
 ## Design
 
 ### PURE HTML
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ApplicationDesign.bmp "Application Design")
-
-<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ApplicationDesign.bmp" width=50% height=50%>
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ApplicationDesign.bmp" width=75% height=75%>
 
 ### RIA
 ![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ApplicationDesignRIA1.bmp "Application Design RIA1")
