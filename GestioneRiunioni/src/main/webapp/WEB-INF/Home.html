@@ -73,8 +73,8 @@
 				</p>
 				<p>
 					Start Date: <input type="datetime-local" name="date"
-						th:attr="min=${#dates.format(#dates.createNow(), 'yyyy-MM-dd HH:mm:ss')}"
-						placeholder="yyyy-MM-dd HH:mm:ss" required />
+						th:attr="min=${#dates.format(#dates.createNow(), 'yyyy-MM-dd HH:mm')}"
+						placeholder="yyyy-MM-dd HH:mm" required />
 				</p>
 				<p>
 					Max number of guests: <input type="number" name="maxGuests" min=1 required />
