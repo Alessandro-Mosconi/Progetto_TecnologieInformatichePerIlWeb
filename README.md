@@ -19,11 +19,23 @@ Il progetto riguardava le costruzione di un sito beckend e frontend per la gesti
 | Backend      | Java                  |
 
 ## Funzionalità 
-- [x] Registrazione
-- [x] Login
-- [x] Creazione meeting
-- [x] Invito altri utenti
-- [x] Visione meeting creati e meeting a cui si è invitati 
-- [x] Controlli frontend e backend sulla correttezza dei vari campi
+- ✅  Registrazione
+- ✅  Login
+- ✅  Creazione meeting
+- ✅  Invito altri utenti
+- ✅  Visione meeting creati e meeting a cui si è invitati 
+- ✅  Controlli frontend e backend sulla correttezza dei vari campi
 
 ## Database
+
+
+## Screenshots
+Scene of the login page\
+\
+![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/resources/ModalError.PNG "Modal Error")\
+\
+\
+Login (CLI VERSION)\
+\
+![picture alt](https://github.com/michelelorenzo/ing-sw-2022-mercurio-miranda-mosconi/blob/main/src/resources/assets/Screenshot/LoginCLI.jpeg "Login CLI")\
+\
