@@ -35,10 +35,11 @@ Il progetto riguardava le costruzione di un sito beckend e frontend per la gesti
 <img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ApplicationDesign.bmp" width=75% height=75%>
 
 ### RIA
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ApplicationDesignRIA1.bmp "Application Design RIA1")
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ApplicationDesignRIA1.bmp" width=75% height=75%>
 
 Dettaglio Home
-![picture alt](https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ApplicationDesignRIA2.bmp "Application Design Home")
+
+<img src="https://github.com/Alessandro-Mosconi/Progetto_TecnologieInformatichePerIlWeb/blob/main/resources/ApplicationDesignRIA2.bmp" width=75% height=75%>
 
 ## Database
 
